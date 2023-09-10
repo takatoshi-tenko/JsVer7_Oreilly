@@ -26,7 +26,21 @@
 //   console.log('no!')
 // }
 
-console.log(Number("3"))
-console.log(String(false))
-console.log(Boolean([]))
-console.log(x + '')
+// console.log(Number("3"))
+// console.log(String(false))
+// console.log(Boolean([]))
+// console.log(x + '')
+
+let o = { x: 1, y: 2 }
+for (const [name, value] of Object.entries(o)) {
+  console.log(name, value)
+}
+
+let [x, y] = [1]
+console.log(x,y)
+[x, y] = [1, 2, 3]
+console.log(x,y)
+[, x,, y] = [1, 2, 3, 4]
+console.log(x,y)
+[x, ...y] = [1,2,3,4]
+console.log(x,y)
