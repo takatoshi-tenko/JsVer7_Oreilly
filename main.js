@@ -45,9 +45,43 @@
 // [x, ...y] = [1,2,3,4]
 // console.log(x,y)
 
-let test = [1,,,,5]
-console.log(test)
-const a = new Date()
+// let test = [1, , , , 5]
+// console.log(test)
+// const a = new Date()
+// console.log(a)
+// const b = Object()
+// console.log(b)
+
+// const array = [
+//   { name: "hoge", email: "test", phone: "09012345678", id: 1 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 2 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 3 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 4 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 5 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 6 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 7 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 8 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 9 },
+//   { name: "hoge", email: "test", phone: "09012345678", id: 10 },
+// ]
+
+
+// オブジェクト生成
+
+let empty = {}
+let point = { x: 0, y: 0 }
+
+let o = new Object()
+let a = new Array()
+let d = new Date()
+let r = new Map()
+
+console.log(o)
 console.log(a)
-const b = Object()
-console.log(b)
+console.log(d)
+console.log(r)
+
+let o1 = Object.create({x: 1, y: 2})
+const o2 = o1.x + o1.y
+console.log('o2の値',o2)
+
